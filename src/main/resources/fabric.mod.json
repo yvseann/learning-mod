@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "sean",
+	"version": "${version}",
+	"name": "sean",
+	"description": "hey",
+	"authors": [
+		"yvseann"
+	],
+	"contact": {
+		"homepage": "https://yvseann.com",
+		"sources": "https://github.com/yvseann/learning-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sean/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.yvseann.learning.Sean"
+		],
+		"fabric-datagen": [
+			"com.yvseann.learning.SeanDataGenerator"
+		],
+      "client": [
+        "com.yvseann.learning.SeanClient"
+      ]
+	},
+	"mixins": [
+		"sean.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
